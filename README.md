@@ -47,3 +47,11 @@
 - `pandas` API:
   - `.asfreq()`, `.reindex()`
   - `.resample()` + transformation method
+
+## Frequency conversion & transformation methods
+
+- `.resample()`: similar to `.groupby()`
+- Groups data within resampling period and applies one or several methods to each group
+- New date determined by offset - start, end, etc
+- Upsampling: fill from existing or interpolate values
+- Downsampling: apply aggregation to existing data
