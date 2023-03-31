@@ -55,3 +55,18 @@
 - New date determined by offset - start, end, etc
 - Upsampling: fill from existing or interpolate values
 - Downsampling: apply aggregation to existing data
+
+## Downsampling & aggregation methods 
+
+- Downsampling: hour to day, day to month, etc
+- How to represent the existing values at the new date?
+  - Mean, median, last value?
+
+## Windows functions in pandas 
+
+- Windows identify sub periods of your time series 
+- Calculate metrics for sub periods inside the window 
+- Create a new time series of metrics 
+- Two types of windows:
+  - Rolling: same size, sliding 
+  - Expanding: contain all prior values
