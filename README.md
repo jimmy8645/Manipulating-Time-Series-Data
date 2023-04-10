@@ -70,3 +70,25 @@
 - Two types of windows:
   - Rolling: same size, sliding 
   - Expanding: contain all prior values
+
+## Expanding windows in pandas
+
+- From rolling to expanding windows 
+- Calculate metrics for periods up to current data 
+- New time series reflects all historical values
+- Useful for running rate of return, running min/ max
+- Two options with pandas:
+  - `.expanding()` - just like `.rolling()`
+  - `.cusum()`, `.cumprod()`, `cummin()`/`max()` 
+
+## Random walks & simulations
+
+- Daily stock returns are hard to predict
+- Models often assume they are random in nature
+- Numpy allows you to generate random numbers 
+- From random returns to prices: `.cumprod()`
+- Two examples:
+  - Generate random returns 
+  - Randomly selected actual SP500 returns
+
+
